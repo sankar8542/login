@@ -1,0 +1,67 @@
+<html>
+<body>
+<style>
+
+  .word{
+        margin-left:5rem;
+		padding:10px;
+  }
+  .last{
+       margin-left:6rem;	
+       background-color:blue;
+	   padding:10px;
+  }
+  .hello{
+      margin-left:40px;
+  }
+  h3{
+     margin-left:5rem;
+  }
+  
+  .table{
+      margin-left:40rem;
+	  margin-top:6rem;
+	  border:2px solid black;
+	  width:15rem;
+	  height:15rem;
+	  background-color:#f2f2f2;
+  }
+  
+</style>
+
+ 
+	<div class='table'>
+	<form action="empty.html" name="san" onsubmit="return(validation())">
+	<h3><i>Instagram<i></h3>
+  <label class='word'for="name">Username</label>
+  <input class='hello'type="text" id="name" name="names" placeholder='name'><br><br>
+  <label class='word'for="name">Password</label>
+  <input class='hello'type="text" id="pass" name="name" placeholder='password'><br><br>
+  <input class='last'type="submit" value="Login">
+</form>
+ </fieldset>
+ </div>
+ 
+<script>
+
+
+    function validation(){
+	 var username=document.getElementById("name").value;
+	 var password=document.getElementById("pass").value;
+ 
+      if(username==""){
+	    alert("fill the username");
+	    return false
+	  }
+	  else if(password==""){
+	     alert("fill the password");
+		 return false
+   }
+     return true
+   }	  
+
+
+	
+</script>
+</body>
+</html>
